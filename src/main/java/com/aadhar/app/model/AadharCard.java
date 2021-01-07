@@ -47,7 +47,7 @@ public class AadharCard {
 	private Date dob;
 
 	@Column(name = "mobile_no",length=12)
-	private int mobileNo;
+	private long mobileNo;
 	
 	@Column(name = "gender")
 	private String gender;
@@ -74,7 +74,7 @@ public class AadharCard {
 	}
 
 	public AadharCard(String aadharNo, String firstName, String middleName, String lastName, String email, Date dob,
-			int mobileNo, String gender, Blob image, Address address, Date createdDate, Date modifiedDate) {
+			long mobileNo, String gender, Blob image, Address address, Date createdDate, Date modifiedDate) {
 		super();
 		this.aadharNo = aadharNo;
 		this.firstName = firstName;
@@ -146,11 +146,11 @@ public class AadharCard {
 		this.dob = dob;
 	}
 
-	public int getMobileNo() {
+	public long getMobileNo() {
 		return mobileNo;
 	}
 
-	public void setMobileNo(int mobileNo) {
+	public void setMobileNo(long mobileNo) {
 		this.mobileNo = mobileNo;
 	}
 
